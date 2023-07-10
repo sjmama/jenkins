@@ -1,8 +1,9 @@
-CREATE TABLE database member_table (
- seq        INT NOT NULL AUTO_INCREMENT,
- mb_id     VARCHAR(20),
- mb_pw    VARCHAR(20),
- address   VARCHAR(50),
- mb_tell    VARCHAR(50),  
-  PRIMARY KEY(seq)
-) ENGINE=MYISAM CHARSET=utf8;
+-- file name : test.sql
+-- pwd : /project_name/app/schema/test.sql
+ 
+use db_1;
+ 
+CREATE TABLE db_1 member_table (
+    idx      INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    test     VARCHAR(256) NOT NULL
+) CHARSET=utf8;
