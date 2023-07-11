@@ -6,14 +6,14 @@ import pymysql
 class Database():
     def __init__(self):
         self.db = pymysql.connect(host='127.0.0.1:3306',
-                                  user='user',
+                                  user='user1',
                                   password=123456,
                                   db='db_1',
                                   charset='utf8')
         self.cursor = self.db.cursor(pymysql.cursors.DictCursor)
  
     def execute(self, query, args={}):
-        self.cursor.execute(query, args)  
+        self.cursor.execute(query, args)
  
     def executeOne(self, query, args={}):
         self.cursor.execute(query, args)
