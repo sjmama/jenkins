@@ -1,6 +1,3 @@
--- file name : test.sql
--- pwd : /project_name/app/schema/test.sql
- 
 use db_1;
  
 CREATE TABLE db_1 member_table (
